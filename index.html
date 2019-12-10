@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>António Rocha</title>
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Judson:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.css" rel="stylesheet">
+  <!-- Sweet Alerts 2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+  <!-- Email.js -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('user_gvK8zH47UJPryP8zwTLqr');
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        var template_params = {
+          "reply_to": document.getElementById('email').value,
+          "from_name": document.getElementById('name').value,
+          "subject": document.getElementById('subject').value,
+          "to_name": "António Rocha",
+          "message_html": document.getElementById('message').value
+        }
+
+        var service_id = "gmail";
+        var template_id = "template_FNMaSzQa";
+        emailjs.send(service_id, template_id, template_params);
+        //emailjs.sendForm('gmail', 'template_FNMaSzQa', this);
+        Swal.fire({
+          icon: 'success',
+          title: 'Email Sent',
+          text: 'Your email was sent with sucess'
+        })
+        document.getElementById('email').value = ""
+        document.getElementById('name').value = ""
+        document.getElementById('subject').value = ""
+        document.getElementById('message').value = ""
+      });
+    }
+  </script>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">António Rocha</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Skills</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row align-items-center justify-content-center text-center">
+        <div class="col align-self-end padimg crop">
+          <img id="optionalstuff" src="../img/teste.png" alt="">
+        </div>
+        <div class="col-lg-6 align-self-baseline padme">
+          <h1 class="text-white">António Rocha</h1>
+          <p class="text-white lead"> I'm António Rocha and I'm a
+            <strong>Full Stack Developer and Game Developer</strong> currently studying Technologies and Information Systems for the Web at ESMAD.</p>
+            <p></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="page-section bg-primary" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-lg-11 text-white">
+          <h2 class="text-center">Skills</h2>
+          <img class="skill" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+            alt="">
+          <img class="skill" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+            alt="">
+          <img class="skill" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="">
+          <img class="skill" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png"
+            alt="">
+          <img class="skill" src="https://vuejs.org/images/logo.png" alt="">
+          <img class="skill" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png "
+            alt="">
+          <img class="skill" src="https://upload.wikimedia.org/wikipedia/commons/8/82/C_Sharp_logo.png" alt="">
+          <img class="skill" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/720px-Arduino_Logo.svg.png"
+            alt="">
+          <img class="skill" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png"
+            alt="">
+          <img class="skill" src="https://cdn.worldvectorlogo.com/logos/mysql.svg" alt="">
+          <img class="skill" src="http://pluspng.com/img-png/logo-mongodb-png-mongodb-1600.png" alt="">
+          <img class="skill" src="https://miro.medium.com/max/724/1*aDcnXab1QC_5KF8JUxDEYA.png" alt="">
+          <img class="skill" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Official_unity_logo.png" alt="">
+          <img class="skill" src="https://discord.js.org/static/logo-square.png" alt="">
+          <img class="skill" src="https://cdn.worldvectorlogo.com/logos/photoshop-cc.svg" alt="">
+          <img class="skill" src="https://cdn.worldvectorlogo.com/logos/after-effects-cc.svg" alt="">
+          <img class="skill" src="https://png2.cleanpng.com/sh/968dc58388a165ab9ea01508f4171ebe/L0KzQYm3VsI6N5D6epH0aYP2gLBuTfNqdpZyeZ89ZD22dH7qjB1xfaVqip9wcnHzeLrqk71ubZ95ed42cnH8PYTrTf1wbJZxRdVybnXwcX67hL02amQ7T6QDZUW6SIjsUr4xO2E3S6cCN0G4Q4G5WcQ6Omc4TaoALoDxd1==/kisspng-cinema-4d-3d-computer-graphics-mental-ray-3d-model-cinema-4d-5b36728e5787e2.0302357715302949263585.png" alt="">
+          <img class="skill" src="https://www.pngkey.com/png/detail/274-2748778_sony-vegas-pro-logo.png" alt="">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="page-section" id="services">
+    <div class="container text-white">
+      <h2 class="text-center mt-0">Portfolio</h2>
+      <hr class="divider my-4">
+      <p class="text-center text-white">Here are the many areas I have worked on, click them to see my works in that area.</p>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 text-center">
+          <div class="mt-5">
+            <a href="pages/web.html">
+              <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
+            </a>
+            <a href="pages/web.html">
+              <h3 class="h4 mb-2">Web Development</h3>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+          <div class="mt-5">
+            <a href="pages/games.html">
+              <i class="fas fa-4x fa-gamepad text-primary mb-4"></i>
+            </a>
+            <a href="pages/games.html">
+              <h3 class="h4 mb-2">Game Development</h3>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 text-center">
+          <div class="mt-5">
+            <a href="pages/design.html">
+              <i class="fas fa-4x fa-edit text-primary mb-4"></i>
+            </a>
+            <a href="pages/design.html">
+              <h3 class="h4 mb-2">Graphic Design</h3>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="text-white" id="contact">
+
+    <!--Section heading-->
+    <div class="container">
+      <h2 class="text-center" style="padding-top:100px">Contact me</h2>
+      <hr class="divider my-4">
+      <div class="row" style="padding-top:50px">
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form">
+            <!--Grid row-->
+            <div class="row">
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <label for="name" class="">
+                    <h4>Your name</h4>
+                  </label>
+                  <input type="text" id="name" name="user_name" class="form-control" required>
+
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <label for="email" class="">
+                    <h4>Your email</h4>
+                  </label>
+                  <input type="email" id="email" name="user_email" class="form-control" required>
+
+                </div>
+              </div>
+              <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <label for="subject" class="" style="padding-top:10px">
+                    <h4>Subject</h4>
+                  </label>
+                  <input type="text" id="subject" name="subject" class="form-control" required>
+
+                </div>
+              </div>
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+
+              <!--Grid column-->
+              <div class="col-md-12">
+
+                <div class="md-form">
+                  <label for="message" style="padding-top:10px">
+                    <h4>Your message</h4>
+                  </label>
+                  <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>
+
+                </div>
+
+              </div>
+            </div>
+            <!--Grid row-->
+            <div class="text-center text-md-left text-white" style="padding-top:20px; padding-bottom:50px;">
+              <input class="btn btn-primary" type="submit" value="Send">
+            </div>
+
+          </form>
+          <!--Grid column-->
+        </div>
+      </div>
+  </section>
+  <!--Section: Contact v.2-->
+
+  <!-- Footer -->
+  <footer class="py-5">
+    <div class="container text-center">
+      <a href="https://www.linkedin.com/in/antónio-rocha-28b678152/">
+        <svg width="90" height="100" style="padding-right:30px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin"
+          class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="#BDB8AE" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+        </svg>
+      </a>
+      <a href="https://github.com/AFGRocha">
+        <svg width="60" height="100" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16"
+          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+          <path fill="#BDB8AE" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
