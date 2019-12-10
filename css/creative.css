@@ -9595,3 +9595,13 @@ footer{
     padding-top: 1rem
   }
 }
+
+
+@media (max-width:411px) {
+  .skill{
+    max-width: 280px;
+    height: 120px;
+    padding: 30px
+  }
+  
+}
