@@ -9566,7 +9566,13 @@ footer{
 
 
 
+.padme{
+  padding-top: 13.5rem
+}
 
+.padimg{
+  padding-top: 11.5rem
+}
 
 
 .skill{
@@ -9577,25 +9583,13 @@ footer{
 
 
 @media (max-width:991px) {
-  img#optionalstuff {
-    display: none;
-  }
+
 
   .padme{
     padding-top: 1rem
   }
 
   .padimg{
-    padding-top: 1rem
-  }
-}
-
-@media (max-width:4000px) {
-  .padme{
-    padding-top: 13.5rem
-  }
-
-  .padimg{
-    padding-top: 11.5rem
+    padding-top: 0rem
   }
 }
