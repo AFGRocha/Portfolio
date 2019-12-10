@@ -9583,13 +9583,15 @@ footer{
 
 
 @media (max-width:991px) {
-
+  img#optionalstuff {
+    display: none;
+  }
 
   .padme{
     padding-top: 1rem
   }
 
   .padimg{
-    padding-top: 0rem
+    padding-top: 1rem
   }
 }
