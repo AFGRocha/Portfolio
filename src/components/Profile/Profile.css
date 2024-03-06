@@ -1,0 +1,31 @@
+.Profile {
+    background: rgb(0, 0, 0); /*rgb(19, 19, 19);*/
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vh;
+    
+}
+
+.flex-child {
+    flex: 1;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 40px;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+
+b {
+    color: rgb(255, 94, 0);
+}
