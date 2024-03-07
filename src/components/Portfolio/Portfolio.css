@@ -1,0 +1,46 @@
+.Portfolio {
+    background-color: #111111 !important;
+}
+
+.portfolio-title {
+    text-align: center;
+    margin-top: 0;
+    color: rgb(255, 94, 0);
+    
+}
+
+.row {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-image-container {
+    margin: 10px 10px;
+}
+
+.portfolio-image-container img {
+    position: absolute;
+    width: 480px;
+    height: 270px;
+}
+
+.text-wrapper {
+    position: relative;
+    width: 480px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+  }
+  
+  .text-wrapper:hover {
+    transition: all 0.8s ease;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+  }
