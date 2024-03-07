@@ -1,0 +1,36 @@
+.Contact {
+    background: #030303 !important; 
+    font-family: "Oswald", sans-serif;
+    color: white;
+    min-width: 100%;
+}
+
+
+form {
+    margin-left: 200px;
+    width: 70%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+label {
+    font-weight: 200;
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(255, 94, 0);
+    border: none;
+}
