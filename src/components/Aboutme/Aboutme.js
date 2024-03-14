@@ -1,10 +1,11 @@
 import './Aboutme.css';
+import image from './assets/DSC_5370.png'
 
 export default function Aboutme() {
     return (
         <div className='Aboutme'>
             <div class="aboutme-flex-container">
-                <div class="aboutme-flex-child">Imagem Aqui</div>
+                <div class="aboutme-flex-child"><img class="image" src={image}/></div>
                 <div class="aboutme-flex-child">
                     <p><h2>About Me </h2></p>
                     <p>Teste sobre eu a dizer cenas</p>
