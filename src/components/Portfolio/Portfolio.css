@@ -10,6 +10,7 @@
 }
 
 .row {
+    background-color: #111111 !important;
     margin-left: 150px;
     margin-right: 150px;
     display: flex;

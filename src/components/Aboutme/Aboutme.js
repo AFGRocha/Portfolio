@@ -8,7 +8,7 @@ import godot from "./assets/godot.png"
 
 export default function Aboutme() {
     return (
-        <div className='Aboutme'>
+        <div className='Aboutme' id='about_me'>
             <div class="aboutme-flex-container">
                 <div class="aboutme-flex-child"><img class="image" src={image}/></div>
                 <div class="aboutme-flex-child">

@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
         <div className="Navbar">
             <div class="container">
-            <a class="link-wrapper" href="#">
+            <a class="link-wrapper" href="#about_me">
                 <span class="fallback">Index</span>
                 <div class="img-wrapper">
                     <img class="normal" src={aboutme} />
@@ -24,7 +24,7 @@ export default function Navbar() {
                     </svg></div>
                 </div>
             </a>
-            <a class="link-wrapper" href="#">
+            <a class="link-wrapper" href="#portfolio">
                 <span class="fallback">Index</span>
                 <div class="img-wrapper">
                     <img class="normal" src={portfolio} />
@@ -41,7 +41,7 @@ export default function Navbar() {
                     </svg></div>
                 </div>
             </a>
-            <a class="link-wrapper" href="#">
+            <a class="link-wrapper" href="#contact">
                 <span class="fallback">Index</span>
                 <div class="img-wrapper">
                     <img class="normal" src={contact} />
