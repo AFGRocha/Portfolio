@@ -38,10 +38,67 @@
     text-align: center;
     color: #fff;
     opacity: 0;
-  }
+}
   
-  .text-wrapper:hover {
+.text-wrapper:hover {
     transition: all 0.8s ease;
     background: rgba(0, 0, 0, 0.6);
     opacity: 1;
-  }
+}
+
+@media (max-width: 1800px) {
+    .portfolio-image-container img {
+        position: absolute;
+        width: 400px;
+        height: 220px;
+    }
+
+    .text-wrapper {
+        position: relative;
+        width: 400px;
+        height: 220px;
+      }
+}
+
+@media (max-width: 1576px) {
+    .portfolio-image-container img {
+        position: absolute;
+        width: 300px;
+        height: 150px;
+    }
+
+    .text-wrapper {
+        position: relative;
+        width: 300px;
+        height: 150px;
+      }
+}
+
+
+@media (max-width: 1276px) {
+    .portfolio-image-container img {
+        position: absolute;
+        width: 240px;
+        height: 130px;
+    }
+
+    .text-wrapper {
+        position: relative;
+        width: 240px;
+        height: 130px;
+      }
+}
+
+@media (max-width: 1096px) {
+    .portfolio-image-container img {
+        position: absolute;
+        width: 570px;
+        height: 370px;
+    }
+
+    .text-wrapper {
+        position: relative;
+        width: 570px;
+        height: 370px;
+      }
+}

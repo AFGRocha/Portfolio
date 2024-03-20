@@ -5,7 +5,7 @@ export default function Profile() {
         <div className='Profile'>
             <div class="flex-container">
                 <div class="flex-child"><b>Frontend Developer </b><p>and aspiring <b>Game Developer</b></p></div>
-                <div class="flex-child"><img src={me}/></div>
+                <div class="flex-child"><img class="profile-img" src={me}/></div>
             </div>
         </div>
     )
