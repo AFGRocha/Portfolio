@@ -3,7 +3,7 @@ import './Contact.css';
 export default function Contact() {
     return (
         <div className='Contact' id='contact'>
-            <h2 style={{ marginLeft: '200px', marginTop: '0px' }}><b>Contact</b></h2>
+            <h2 class="contact-title"><b>Contact</b></h2>
             <form
                 action="https://formspree.io/f/moqgleed"
                 method="POST"

@@ -11,6 +11,42 @@ form {
     width: 78%;
 }
 
+.contact-title {
+    margin-left: 200px;
+    margin-top: 0px;
+}
+
+@media (max-width: 1050px) {
+    form {
+        margin-left: 150px;
+        width: 78%;
+    }
+
+    .contact-title {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 800px) {
+    form {
+        margin-left: 90px;
+        width: 78%;
+    }
+    .contact-title {
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 540px) {
+    form {
+        margin-left: 50px;
+        width: 78%;
+    }
+
+    .contact-title {
+        margin-left: 50px;
+    }
+}
 input {
     width: 100%;
     padding: 10px;

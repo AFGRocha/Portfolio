@@ -22,11 +22,11 @@ export default function Aboutme() {
                 </div>
             </div>
             <div class="tech">
-            <div><img src={vue}/></div>
-            <div><img src={react}/></div>
-            <div><img src={photoshop}/></div>
-            <div><img src={unity}/></div>
-            <div><img src={godot}/></div>
+            <div><img class="tech-img" src={vue}/></div>
+            <div><img class="tech-img" src={react}/></div>
+            <div><img class="tech-img" src={photoshop}/></div>
+            <div><img class="tech-img" src={unity}/></div>
+            <div><img class="tech-img" src={godot}/></div>
             </div>
         </div>
     )

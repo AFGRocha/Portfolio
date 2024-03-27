@@ -3,16 +3,20 @@
     color: white;
 }
 
+.profile-img {
+    max-width: 100%;
+    height: auto;
+}
+
 .flex-container {
     display: flex;
     text-align: center;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    min-width: 100vh;
-    
+    min-height: 100vh;    
 }
+
 
 .flex-child {
     flex: 1;
@@ -28,9 +32,4 @@
 
 b {
     color: rgb(255, 94, 0);
-}
-
-.profile-img {
-    max-width: 100%;
-    height: auto;
 }
