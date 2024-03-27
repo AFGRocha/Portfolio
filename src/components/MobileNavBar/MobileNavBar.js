@@ -8,7 +8,6 @@ import { useRef } from 'react';
 export default function MobileNavbar() {
     const burgerMenu = useRef(null);
     const open = () => {
-        console.log(burgerMenu)
         if (burgerMenu.current.style.display === "block") {
             burgerMenu.current.style.display = "none";
         } else {
