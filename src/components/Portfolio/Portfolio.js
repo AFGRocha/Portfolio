@@ -5,6 +5,7 @@ import gummi from "./assets/gummi.png"
 import claustromania from "./assets/claustromania.png"
 import exchess from "./assets/exchess.png"
 import mari from "./assets/marikyuun.jpg"
+import hologarden from "./assets/hologarden.png"
 
 
 export default function Portfolio() {
@@ -56,6 +57,15 @@ export default function Portfolio() {
                     <span class="text-wrapper">
                         <b>Marikyuun's Puzzle Quest</b>
                         Puzzle game developed in C++
+                    </span>
+                </a>
+            </div>
+            <div class="row">
+                <a class="portfolio-image-container" href='https://daikipt.itch.io/holo-garden'>
+                    <img src={hologarden} />
+                    <span class="text-wrapper">
+                        <b>HoloGarden</b>
+                        Virtual pet game developed with pixi.js for browser and pc (with Electron)
                     </span>
                 </a>
 
